@@ -1,0 +1,261 @@
+/* 
+Основная политра
+Основной цвет текста-#757575 
+Цвет заголовков-#212121
+Цвет подписи-#FFFFFF
+Цвет анимации - #2196f3
+Цвет логотипа - #000000
+ - #F5F4FA
+ */
+
+:root {
+  --main-text-color: #757575;
+  --header-color: #212121;
+  --main-header-color: #ffffff;
+  --animation-color: #2196f3;
+  --logo-color: #000000;
+  --bg-color: #f5f4fa;
+  --animation-botton-color: #188ce8;
+  --footer-bg-color: #2f303a;
+}
+
+body {
+  color: var(--main-text-color);
+
+  font-family: Roboto, sans-serif;
+  font-weight: 400;
+}
+
+/* Все ссылки */
+a {
+  text-decoration: none;
+}
+
+/* Логотип */
+.logo {
+  color: var(--logo-color);
+
+  font-family: Raleway;
+  font-weight: bold;
+  font-size: 26px;
+  line-height: 1.2;
+  letter-spacing: 0.03em;
+}
+
+.logo-beginning {
+  color: var(--animation-color);
+}
+
+/* Навигация страницы */
+ul {
+  list-style-type: none;
+}
+
+.nav {
+  color: var(--header-color);
+
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.1;
+  letter-spacing: 0.02em;
+}
+.nav:hover {
+  color: var(--animation-color);
+}
+
+.nav-active {
+  color: var(--animation-color);
+}
+
+/* Контакты */
+.contacts {
+  color: var(--main-text-color);
+
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.7;
+  letter-spacing: 0.03em;
+}
+
+.contacts:hover {
+  color: var(--animation-color);
+}
+
+/* Герой */
+.hero {
+  background-color: var(--logo-color);
+}
+h1 {
+  color: var(--main-header-color);
+
+  font-weight: 900;
+  font-size: 44px;
+  line-height: 1.4;
+  text-align: center;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+}
+
+.button {
+  background-color: var(--animation-color);
+  color: var(--main-header-color);
+
+  cursor: pointer;
+
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 1.8;
+  text-align: center;
+  letter-spacing: 0.06em;
+}
+.button:hover {
+  background-color: var(--animation-botton-color);
+}
+
+/* Наши преимущества */
+h3 {
+  color: var(--header-color);
+}
+
+.container-item {
+  width: 270px;
+}
+
+.container-header {
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 1.1;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+}
+
+.container-paragraph {
+  width: 270px;
+
+  font-size: 14px;
+  line-height: 1.7;
+  letter-spacing: 0.03em;
+}
+
+/* Чем мы занимаемся */
+
+.header {
+  color: var(--header-color);
+
+  font-weight: bold;
+  font-size: 36px;
+  line-height: 1.2;
+  text-align: center;
+  letter-spacing: 0.03em;
+}
+
+/* Наша команда */
+.team {
+  background-color: var(--bg-color);
+}
+
+.header-team {
+  color: var(--header-color);
+
+  font-weight: bold;
+  font-size: 36px;
+  line-height: 1.2;
+  text-align: center;
+  letter-spacing: 0.03em;
+}
+
+.cards-item {
+  width: 270px;
+  background-color: var(--main-header-color);
+}
+
+.cards-header {
+  color: var(--header-color);
+
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.2;
+  text-align: center;
+  letter-spacing: 0.03em;
+}
+
+.cards-paragraph {
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 1.2;
+  text-align: center;
+  letter-spacing: 0.03em;
+}
+
+/* Подвал сайта */
+footer {
+  background-color: var(--footer-bg-color);
+}
+
+.footer-logo {
+  color: var(--main-header-color);
+
+  font-family: Raleway;
+  font-weight: bold;
+  font-size: 26px;
+  line-height: 1.2;
+  letter-spacing: 0.03em;
+}
+
+address {
+  color: var(--main-header-color);
+
+  font-style: normal;
+  font-size: 14px;
+  line-height: 1.7;
+  letter-spacing: 0.03em;
+}
+
+.footer-contacts {
+  color: rgba(100%, 100%, 100%, 60%);
+
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.7;
+  letter-spacing: 0.03em;
+}
+
+/* Стили к portfolio.html */
+.filter-button {
+  background-color: var(--bg-color);
+  color: var(--header-color);
+
+  cursor: pointer;
+
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.6;
+  text-align: center;
+  letter-spacing: 0.03em;
+}
+
+.filter-button:hover,
+.filter-button:focus {
+  background-color: var(--animation-color);
+  color: var(--main-header-color);
+}
+
+.gallery-item {
+  width: 370px;
+}
+
+.gallery-header {
+  color: var(--header-color);
+
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 2;
+  letter-spacing: 0.06em;
+}
+
+.gallery-paragraph {
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 1.8;
+  letter-spacing: 0.03em;
+}
