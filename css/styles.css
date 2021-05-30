@@ -6,6 +6,7 @@
 Цвет анимации - #2196f3
 Цвет логотипа - #000000
  - #F5F4FA
+ background: #E5E5E5;
  */
 
 :root {
@@ -17,6 +18,7 @@
   --bg-color: #f5f4fa;
   --animation-botton-color: #188ce8;
   --footer-bg-color: #2f303a;
+  --bg-color-portfolio: #e5e5e5;
 }
 
 html {
@@ -47,6 +49,10 @@ a {
   margin-right: auto;
   padding-left: 15px;
   padding-right: 15px;
+}
+
+.header-nav {
+  border-bottom: 1px solid rgba(236, 236, 236, 1);
 }
 
 .main-nav {
@@ -364,6 +370,21 @@ address {
 }
 
 /* Стили к portfolio.html */
+
+.gallery-section {
+  background-color: var(--bg-color-portfolio);
+}
+
+.filter {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 50px;
+}
+
+.filter .item:not(:last-child) {
+  margin-right: 30px;
+}
+
 .filter-button {
   /* border: 1px solid transparent; */
   border-radius: 4px;
@@ -386,11 +407,28 @@ address {
   color: var(--main-header-color);
 }
 
+.gallery {
+  display: flex;
+  flex-wrap: wrap;
+}
+
 .gallery-item {
   width: 370px;
+  padding-bottom: 20px;
+}
+
+.gallery-item:not(:nth-child(3n)) {
+  margin-right: 30px;
+}
+
+.gallery-item .img {
+  margin-bottom: 20px;
 }
 
 .gallery-header {
+  margin-bottom: 4px;
+  text-align: center;
+
   color: var(--header-color);
 
   font-weight: bold;
@@ -400,6 +438,8 @@ address {
 }
 
 .gallery-paragraph {
+  text-align: center;
+
   font-weight: normal;
   font-size: 16px;
   line-height: 1.8;
