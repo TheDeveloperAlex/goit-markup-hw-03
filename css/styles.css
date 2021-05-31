@@ -415,6 +415,8 @@ address {
 .gallery-item {
   width: 370px;
   padding-bottom: 20px;
+  border: 1px solid rgba(238, 238, 238, 1);
+  margin-bottom: 30px;
 }
 
 .gallery-item:not(:nth-child(3n)) {
