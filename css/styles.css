@@ -7,6 +7,7 @@
 Цвет логотипа - #000000
  - #F5F4FA
  background: #E5E5E5;
+ border color - #eeeeee
  */
 
 :root {
@@ -19,6 +20,7 @@
   --animation-botton-color: #188ce8;
   --footer-bg-color: #2f303a;
   --bg-color-portfolio: #e5e5e5;
+  --border-color: #eeeeee;
 }
 
 html {
@@ -161,8 +163,11 @@ p {
 
 /* Герой */
 .hero {
-  background-color: var(--logo-color);
+  padding-top: 200px;
+  padding-bottom: 200px;
   text-align: center;
+
+  background-color: var(--logo-color);
 }
 h1 {
   width: 696px;
@@ -256,6 +261,10 @@ h3 {
   letter-spacing: 0.03em;
 }
 
+.doing-section {
+  padding-top: 0px;
+}
+
 .doing {
   display: flex;
 }
@@ -287,7 +296,7 @@ h3 {
 
 .cards-item {
   width: 270px;
-  padding-bottom: 30px;
+  /* padding-bottom: 30px; */
 
   background-color: var(--main-header-color);
 }
@@ -297,7 +306,13 @@ h3 {
 }
 
 .img-members {
-  margin-bottom: 30px;
+  display: block;
+  /* margin-bottom: 30px; */
+}
+
+.cards-box {
+  padding-bottom: 30px;
+  padding-top: 30px;
 }
 
 .cards-header {
@@ -322,8 +337,8 @@ h3 {
 
 /* Подвал сайта */
 footer {
-  padding-top: 75px;
-  padding-bottom: 45px;
+  padding-top: 60px;
+  padding-bottom: 60px;
   background-color: var(--footer-bg-color);
 }
 
@@ -341,12 +356,15 @@ footer {
 }
 
 address {
+  font-style: normal;
+}
+
+.address {
   display: block;
   margin-bottom: 9px;
 
   color: var(--main-header-color);
 
-  font-style: normal;
   font-size: 14px;
   line-height: 1.7;
   letter-spacing: 0.03em;
@@ -371,10 +389,6 @@ address {
 
 /* Стили к portfolio.html */
 
-.gallery-section {
-  background-color: var(--bg-color-portfolio);
-}
-
 .filter {
   display: flex;
   justify-content: center;
@@ -382,7 +396,7 @@ address {
 }
 
 .filter .item:not(:last-child) {
-  margin-right: 30px;
+  margin-right: 8px;
 }
 
 .filter-button {
@@ -415,7 +429,6 @@ address {
 .gallery-item {
   width: 370px;
   padding-bottom: 20px;
-  border: 1px solid rgba(238, 238, 238, 1);
   margin-bottom: 30px;
 }
 
@@ -427,13 +440,19 @@ address {
   margin-bottom: 0;
 }
 
-.gallery-item .img {
-  margin-bottom: 20px;
+.gallery-box {
+  padding: 20px 24px;
+  border-bottom: 1px solid var(--border-color);
+  border-left: 1px solid var(--border-color);
+  border-right: 1px solid var(--border-color);
 }
+
+/* .gallery-item .img {
+  margin-bottom: 20px;
+} */
 
 .gallery-header {
   margin-bottom: 4px;
-  text-align: center;
 
   color: var(--header-color);
 
@@ -444,8 +463,6 @@ address {
 }
 
 .gallery-paragraph {
-  text-align: center;
-
   font-weight: normal;
   font-size: 16px;
   line-height: 1.8;

@@ -27,8 +27,8 @@
                 </ul>
             </nav>
             <ul class="contacts-nav">
-                <li class="item"><a href="#" class="contacts">info@devstudio.com</a></li>
-                <li class="item"><a href="#" class="contacts">+38 096 111 11 11</a></li>
+                <li class="item"><a href="mailto:info@example.com" target="_blank" class="contacts">info@devstudio.com</a></li>
+                <li class="item"><a href="tel:+380991111111" target="_blank" class="contacts">+38 096 111 11 11</a></li>
             </ul>
         </div>
     
@@ -49,48 +49,66 @@
                 <ul class="gallery">
                     <li class="gallery-item">
                         <img src="./images/img-technokryak.jpg" alt="Технокряк" width="370" class="img">
-                        <h3 class="gallery-header">Технокряк</h3>
-                        <p class="gallery-paragraph">Веб-сайт</p>
+                        <div class="gallery-box">
+                            <h3 class="gallery-header">Технокряк</h3>
+                            <p class="gallery-paragraph">Веб-сайт</p>
+                        </div>
                     </li>
                     <li class="gallery-item">
                         <img src="./images/img-poster-new-orleans-vs-golden-star.jpg" alt="Постер New Orlean vs Golden Star" width="370" class="img">
-                        <h3 class="gallery-header">  Постер <span lang="en">New Orlean vs Golden Star</span></h3>
-                        <p class="gallery-paragraph">Дизайн</p>
+                        <div class="gallery-box">
+                            <h3 class="gallery-header">  Постер <span lang="en">New Orlean vs Golden Star</span></h3>
+                            <p class="gallery-paragraph">Дизайн</p>
+                        </div>
                     </li>
                     <li class="gallery-item">
                         <img src="./images/img-restaurant-seafood.jpg" alt="Ресторан Seafood" width="370" class="img">
-                        <h3 class="gallery-header">Ресторан <span lang="en">Seafood</span></h3>
-                        <p class="gallery-paragraph">Приложение</p>
+                        <div class="gallery-box">
+                            <h3 class="gallery-header">Ресторан <span lang="en">Seafood</span></h3>
+                            <p class="gallery-paragraph">Приложение</p>
+                        </div>
                     </li>
                     <li class="gallery-item">
                         <img src="./images/img-project-prime.jpg" alt="Проект Prime" width="370" class="img">
-                        <h3 class="gallery-header">Проект <span lang="en">Prime</span></h3>
-                        <p class="gallery-paragraph">Маркетинг</p>
+                        <div class="gallery-box">
+                            <h3 class="gallery-header">Проект <span lang="en">Prime</span></h3>
+                            <p class="gallery-paragraph">Маркетинг</p>
+                        </div>
                     </li>
                     <li class="gallery-item">
                         <img src="./images/img-project-boxes.jpg" alt="Проект Boxes" width="370" class="img">
-                        <h3 class="gallery-header">Проект <span lang="en">Boxes</span></h3>
-                        <p class="gallery-paragraph">Приложение</p>
+                        <div class="gallery-box">
+                            <h3 class="gallery-header">Проект <span lang="en">Boxes</span></h3>
+                            <p class="gallery-paragraph">Приложение</p>
+                        </div>
                     </li>
                     <li class="gallery-item">
                         <img src="./images/img-inspiration-has-no-borders.jpg" alt="Inspiration has no Borders" width="370" class="img">
-                        <h3 class="gallery-header"><span lang="en">Inspiration has no Borders</span></h3>
-                        <p class="gallery-paragraph">Веб-сайт</p>
+                        <div class="gallery-box">
+                            <h3 class="gallery-header"><span lang="en">Inspiration has no Borders</span></h3>
+                            <p class="gallery-paragraph">Веб-сайт</p>
+                        </div>
                     </li>
                     <li class="gallery-item">
                         <img src="./images/img-edition-limited-edition.jpg" alt="Издание Limited Edition" width="370" class="img">
-                        <h3 class="gallery-header">Издание <span lang="en">Limited Edition</span></h3>
-                        <p class="gallery-paragraph">Дизайн</p>
+                        <div class="gallery-box">
+                            <h3 class="gallery-header">Издание <span lang="en">Limited Edition</span></h3>
+                            <p class="gallery-paragraph">Дизайн</p>
+                        </div>
                     </li>
                     <li class="gallery-item">
                         <img src="./images/img-project-lab.jpg" alt="Проект LAB" width="370" class="img">
-                        <h3 class="gallery-header">Проект <span lang="en">LAB</span></h3>
-                        <p class="gallery-paragraph">Маркетинг</p>
+                        <div class="gallery-box">
+                            <h3 class="gallery-header">Проект <span lang="en">LAB</span></h3>
+                            <p class="gallery-paragraph">Маркетинг</p>
+                        </div>
                     </li>
                     <li class="gallery-item">
                         <img src="./images/img-growing-business.jpg" alt="Growing Business" width="370" class="img">
-                        <h3 class="gallery-header"><span lang="en">Growing Business</span></h3>
-                        <p class="gallery-paragraph">Приложение</p>
+                        <div class="gallery-box">
+                            <h3 class="gallery-header"><span lang="en">Growing Business</span></h3>
+                            <p class="gallery-paragraph">Приложение</p>
+                        </div>
                     </li>
                 </ul> 
             </div>
@@ -100,15 +118,18 @@
     <footer>
         <div class="container">
             <!-- Подвал сайта -->
-            <a href="./index.html" class="footer-logo"><span class="logo-beginning">Web</span>studio</a>
             <address>
-                г. Киев, пр-т Леси Украинки, 26
+                <a href="./index.html" class="footer-logo"><span class="logo-beginning">Web</span>studio</a>
+            
+                <a href="https://goo.gl/maps/j5ftLa1bmfd7tv1o9" target="_blank" class="address">г. Киев, пр-т Леси Украинки, 26</a>
+            
+                <ul>
+                    <li class="footer-email"><a href="mailto:info@example.com" target="_blank"
+                            class="footer-contacts">info@example.com</a></li>
+                    <li class="footer-teleph"><a href="tel:+380991111111" target="_blank" class="footer-contacts">+38 099 111 11
+                            11</a></li>
+                </ul>
             </address>
-            <ul>
-                <li class="footer-email"><a href="#" class="footer-contacts">info@example.com</a></li>
-                <li class="footer-teleph"><a href="#" class="footer-contacts">+38 099 111 11 11</a></li>
-            </ul>
-        </div>
     
     </footer>
 </body>
